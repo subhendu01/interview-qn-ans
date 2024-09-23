@@ -617,7 +617,7 @@
    print(sorted_pairs)  # Output: [(1, 'one'), (3, 'three'), (2, 'two')]
   ```  
 
-### 14. What are *args and kwargs?
+### 14. What are *args and **kwargs?
     In Python, *args and **kwargs are used in function definitions to allow the function to accept an arbitrary number 
     of arguments. They are a flexible way to handle variable numbers of input arguments and keyword arguments.
 
