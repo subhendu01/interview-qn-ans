@@ -276,6 +276,7 @@
     converted to lowercase and all the lowercase letters converted to uppercase. Non-alphabetical characters 
     remain unchanged.
   Syntax: ```string.swapcase()```
+  #### 
   Example:
   ```python
     text = "Hello World!"
