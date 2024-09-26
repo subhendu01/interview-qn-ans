@@ -213,6 +213,64 @@
   particularly for multithreaded applications. The GIL is one of the reasons Python is not always the best choice for programs that require heavy parallelism across multiple CPU cores.
   
 ### 5. What is the difference between a shallow copy and a deep copy?
+ * #### Shallow Copy
+   A shallow copy creates a new object, but it only copies the references to the objects contained in the original 
+   compound object. It means that while the outer structure is copied, the inner elements (objects or references) are 
+   shared between the original and the copied object.
+   * If the elements inside the compound object are immutable (like integers, strings, or tuples), both the original 
+     and the shallow copy can change independently without affecting each other.
+   * If the elements are mutable (like lists or dictionaries), changes to the mutable objects inside the copy will 
+     reflect in the original object and vice versa because they share the same reference. 
+   #### 
+   ###### Example of Shallow Copy:
+   ```python
+    import copy
+
+    original_list = [1, [2, 3], 4]
+    shallow_copied_list = copy.copy(original_list)
+    
+    # Modify the nested list in the copied version
+    shallow_copied_list[1][0] = 99
+    
+    print("Original List:", original_list)  # Output: [1, [99, 3], 4]
+    print("Shallow Copy List:", shallow_copied_list)  # Output: [1, [99, 3], 4]
+   ```
+   In this example, modifying the nested list in `shallow_copied_list` also affects `original_list` because 
+   the shallow copy only copies references to the original list’s inner objects.
+ * #### Deep Copy
+   A deep copy creates a new object and recursively copies all objects found within the original object. This means 
+   that the deep copy duplicates not only the outer structure but also all nested objects and their references. 
+   The original and the copied objects are completely independent, and changes made to one will not affect the other, 
+   even for mutable objects.
+  ###### Example of Deep Copy:
+  ```python
+    import copy
+
+    original_list = [1, [2, 3], 4]
+    deep_copied_list = copy.deepcopy(original_list)
+    
+    # Modify the nested list in the deep copy
+    deep_copied_list[1][0] = 99
+    
+    print("Original List:", original_list)  # Output: [1, [2, 3], 4]
+    print("Deep Copy List:", deep_copied_list)  # Output: [1, [99, 3], 4]
+  ```
+  In this example, modifying the nested list in `deep_copied_list` does not affect `original_list` because the deep copy 
+  creates a completely independent clone, including all inner elements.
+ 
+ ###### Key Differences
+ * Object
+   * **Shallow Copy:** New object with references to original’s inner objects
+   * **Deep Copy:** Entirely new object with copies of all inner objects
+ * Mutability
+   * **Shallow Copy:** Changes to mutable inner objects affect both the original and the copy
+   * **Deep Copy:** Changes in any object (including nested ones) do not affect the other
+ * Performance
+   * **Shallow Copy:** Faster, as it only copies references
+   * **Deep Copy:** Slower, as it duplicates everything recursively
+ * Usage
+   * **Shallow Copy:** Suitable when you want to copy the structure but not the data inside mutable elements
+   * **Deep Copy:** Suitable when you need a fully independent copy of all nested elements
 ### 6. What is swapcase function in Python?
 ### 7. What are Iterators in Python?
 ### 8. What are Generators in Python?
