@@ -272,7 +272,19 @@
    * **Shallow Copy:** Suitable when you want to copy the structure but not the data inside mutable elements
    * **Deep Copy:** Suitable when you need a fully independent copy of all nested elements
 ### 6. What is swapcase function in Python?
+    The `swapcase()` function in Python is a string method that returns a new string with all the uppercase letters 
+    converted to lowercase and all the lowercase letters converted to uppercase. Non-alphabetical characters 
+    remain unchanged.
+  Syntax: ```string.swapcase()```
+  Example:
+  ```python
+    text = "Hello World!"
+    swapped_text = text.swapcase()
+    
+    print(swapped_text)  # Output: "hELLO wORLD!"
+  ```
 ### 7. What are Iterators in Python?
+  
 ### 8. What are Generators in Python?
 ### 9. What are Decorators?
 ### 10. Does Python support multiple inheritance?
