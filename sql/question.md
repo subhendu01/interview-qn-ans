@@ -1,4 +1,4 @@
-* ### Beginner Level
+### Beginner Level
 1. What is SQL?
    * Can you define SQL and its primary purpose?
 2. What are the different types of SQL commands?
@@ -21,7 +21,7 @@
 10. What is a Foreign Key?
     * How does it help maintain relationships between tables?
 
-* ### Intermediate Level
+### Intermediate Level
 1. Explain the difference between `UNION` and `UNION ALL`.
    * How do they handle duplicates?
 2. What are `GROUP BY` and `ORDER BY` used for?
@@ -43,7 +43,7 @@
 10. How can you find duplicate records in a table?
    * Write an SQL query to find duplicates.
 
-* ### Experienced Level
+### Experienced Level
 1. What are window functions?
    * Explain the difference between `ROW_NUMBER()`, `RANK()`, and `DENSE_RANK()`.
 2. What are CTEs (Common Table Expressions) and recursive CTEs?
