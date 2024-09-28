@@ -65,3 +65,30 @@
 10. Explain database sharding.
    * How does it help with scalability in large-scale systems?
 
+### 
+1. How to create a table?
+2. How to update a table?
+3. How to delete a table from a database?
+4. How to get the count of records in a table?
+5. How to sort records in a table?
+6. How to select all columns from a table?
+7. How to select common records from two tables?
+8. What is the DISTINCT statement and how do you use it?
+9. What is the default data ordering with the ORDER BY statement, and how do you change it?
+10. What is the order of appearance of the common statements in the SELECT query?
+11. In which order the interpreter executes the common statements in the SELECT query?
+12. How do you add a record to a table?
+13. How to delete a record from a table?
+14. How to add a column to a table?
+15. How to rename a column of a table?
+16. How to delete a column from a table?
+17. How to select all even or all odd records in a table?
+18. How to prevent duplicate records when making a query?
+19. How to insert many rows in a table?
+20. How to find the nth highest value in a column of a table?
+21. How to find the values in a text column of a table that start with a certain letter?
+22. How to find the last id in a table?
+23. How to select random rows from a table?
+24. Write an SQL query to find the second-highest salary from the `employees` table.
+25. 
+
