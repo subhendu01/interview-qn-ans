@@ -65,7 +65,7 @@
 10. Explain database sharding.
    * How does it help with scalability in large-scale systems?
 
-### 
+### Essential SQL Interview Questions
 1. How to create a table?
 2. How to update a table?
 3. How to delete a table from a database?
