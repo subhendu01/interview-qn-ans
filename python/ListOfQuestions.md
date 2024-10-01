@@ -85,3 +85,7 @@ Python Code Quality and Style : [Answers](answers%2Fcode_quality_and_style.md)
 3. Python Files and Memory Management
 4. How is memory managed in Python?
 5. How do you delete a file using Python?
+
+Advance :
+1. What are the techniques for code optimization?
+2. 
